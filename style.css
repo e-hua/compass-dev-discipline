@@ -1,0 +1,39 @@
+/* The specific visual effect of the website */
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #fff9db;
+  /* Soft Yellow for the webpage background */
+  padding: 0;
+}
+
+.button {
+  background-color: #ffffff;
+  /* 
+  pure white for the icon background color, 
+  for a contrast indicating this is a button
+  */
+
+  border: 2px solid #ccc;
+  /*
+  Solid Silver for the border of the button
+  */
+
+  height: 100px;
+  cursor: pointer;
+  padding: 12px 24px;
+  /* 
+  make the icon smaller 
+  with some "buffer" from the paddings
+  */
+
+  border-radius: 8px;
+  /* Make the border looks less "sharp" */
+
+  transition: transform 0.2s ease, border-radius 0.2s ease;
+  /* Enable smooth transition */
+}
+
+.button:hover {
+  transform: scale(1.1);
+  /*Scale the icon upon hover */
+}
