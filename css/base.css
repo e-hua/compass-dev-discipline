@@ -5,8 +5,19 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  /*
+  To prevent the underline between icons 
+  */
+}
+
 body {
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #fff9db;
+  /* Soft Yellow for the webpage background */
   margin: 8px;
+  padding: 0;
 }
 
 p {
