@@ -10,7 +10,7 @@
     <!-- import the style sheet for the main part of HTML, order matters !-->
     <link rel="stylesheet" href="./css/card.css" />
 
-    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/iconButton.css" />
 
     <link rel="stylesheet" href="./css/navbar.css" />
   </head>
@@ -18,13 +18,19 @@
   <body>
     <h1>Welcome to the internal discipline of the Compass Devs !</h1>
 
-    <hr />
+    <button id="toggle-theme">
+      <img
+        id="theme-icon"
+        src="Icons/Light_Switch/sun.svg"
+        alt="Toggle theme"
+      />
+    </button>
 
     <nav class="navbar">
       <a href="./index.html" class="active">🏠 Home</a>
       <a href="./html/DevTools.html">🛠 Dev Tools</a>
       <a href="./index.html">⚙️ Ops Tools</a>
-      <a href="./html/Languages.html">📚 Languages</a>
+      <a href="./html/TechStack.html">📚 Tech Stack</a>
       <a href="./index.html">👤 Developers</a>
     </nav>
 
@@ -36,14 +42,18 @@
         <p>Tools we use to code, debug, and control versions.</p>
 
         <a href="https://git-scm.com/">
-          <img src="./Icons/git.svg" alt="A cool Icon for git" class="button" />
+          <img
+            src="./Icons/git.svg"
+            alt="A cool Icon for git"
+            class="icon-button"
+          />
         </a>
 
         <a href="https://code.visualstudio.com/">
           <img
             src="./Icons/visual-studio-code.svg"
             alt="Visual Studio Code logo"
-            class="button"
+            class="icon-button"
           />
         </a>
 
@@ -51,7 +61,7 @@
           <img
             src="./Icons/intellij-idea.svg"
             alt="IntelliJ IDEA logo"
-            class="button"
+            class="icon-button"
           />
         </a>
       </div>
@@ -61,36 +71,63 @@
         <p>Tools we use to deploy, monitor, and ship.</p>
 
         <a href="https://github.com/">
-          <img src="./Icons/github.svg" alt="Github logo" class="button" />
+          <img src="./Icons/github.svg" alt="Github logo" class="icon-button" />
         </a>
 
         <a href="https://miro.com/">
-          <img src="./Icons/miro.svg" alt="Miro logo" class="button" />
+          <img src="./Icons/miro.svg" alt="Miro logo" class="icon-button" />
         </a>
       </div>
 
-      <div class="card" onclick="location.href='html/Languages.html'">
-        <h2>📚 Languages</h2>
-        <p>Technologies in our stack !</p>
+      <div class="card" onclick="location.href='html/TechStack.html'">
+        <h2>📚 Tech Stack</h2>
+        <p>
+          Languages, frameworks, databases, front-end and back-end tools we will
+          be using!
+        </p>
 
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-          <img src="./Icons/html5.svg" alt="HTML logo" class="button" />
+          <img src="./Icons/html5.svg" alt="HTML logo" class="icon-button" />
         </a>
 
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-          <img src="./Icons/css3.svg" alt="CSS3 logo" class="button" />
+          <img src="./Icons/css3.svg" alt="CSS3 logo" class="icon-button" />
+        </a>
+
+        <a href="https://www.javascript.com/">
+          <img
+            src="./Icons/javascript.svg"
+            alt="JavaScript logo"
+            class="icon-button"
+          />
         </a>
 
         <a href="https://react.dev/">
-          <img src="./Icons/react.svg" alt="React.js logo" class="button" />
+          <img
+            src="./Icons/react.svg"
+            alt="React.js logo"
+            class="icon-button"
+          />
         </a>
 
         <a href="https://www.java.com/en/">
-          <img src="./Icons/java.svg" alt="Java logo" class="button" />
+          <img src="./Icons/java.svg" alt="Java logo" class="icon-button" />
+        </a>
+
+        <a href="https://spring.io/projects/spring-boot">
+          <img
+            src="./Icons/Spring_Boot.svg"
+            alt="Spring Boot logo"
+            class="icon-button"
+          />
+        </a>
+
+        <a href="https://www.mysql.com/">
+          <img src="./Icons/mysql.svg" alt="MySQL logo" class="icon-button" />
         </a>
       </div>
 
-      <div class="card" onclick="location.href='html/Devs.html'">
+      <div class="card" onclick="location.href='html/Developers.html'">
         <h2>👨‍💻 Developers</h2>
         <p>
           About the creator of this site, contact info, and project background.
@@ -112,5 +149,7 @@
         non-commercial purposes only.
       </p>
     </footer>
+
+    <script src="/js/theme.js"></script>
   </body>
 </html>

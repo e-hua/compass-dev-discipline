@@ -13,21 +13,27 @@
     <link rel="stylesheet" href="../css/base.css" />
 
     <!-- import the style sheet for the main part of HTML, order matters !-->
-    <link rel="stylesheet" href="../css/button.css" />
+    <link rel="stylesheet" href="../css/iconButton.css" />
 
     <link rel="stylesheet" href="../css/navbar.css" />
   </head>
 
   <body class="big-button">
-    <h1>Development Tools of the Compass Devs</h1>
+    <button id="toggle-theme">
+      <img
+        id="theme-icon"
+        src="/Icons/Light_Switch/sun.svg"
+        alt="Toggle theme"
+      />
+    </button>
 
-    <hr />
+    <h1>Development Tools of the Compass Devs</h1>
 
     <nav class="navbar">
       <a href="../index.html"> 🏠 Home</a>
       <a href="./DevTools.html" class="active">🛠 Dev Tools</a>
       <a href="../index.html">⚙️ Ops Tools</a>
-      <a href="./Languages.html">📚 Languages</a>
+      <a href="./TechStack.html">📚 Tech Stack</a>
       <a href="../index.html">👤 Developers</a>
     </nav>
 
@@ -42,11 +48,15 @@
 
     <h2>1. Git</h2>
     <h3>
-      <span style="color: black">Version Control: </span>
+      <span>Version Control: </span>
       <span style="color: #f1502f">Git </span>
     </h3>
     <a href="https://git-scm.com/">
-      <img src="../Icons/git.svg" alt="A cool Icon for git" class="button" />
+      <img
+        src="../Icons/git.svg"
+        alt="A cool Icon for git"
+        class="icon-button"
+      />
     </a>
     <p>
       All the git commit -m command should be followed by meaningful messages,
@@ -68,7 +78,7 @@
     </p>
 
     <h3>
-      <span style="color: black">Frontend: </span>
+      <span>Frontend: </span>
       <span style="color: #007acc">Visual Studio Code </span>
     </h3>
     <p>
@@ -85,7 +95,7 @@
       <img
         src="../Icons/visual-studio-code.svg"
         alt="Visual Studio Code logo"
-        class="button"
+        class="icon-button"
       />
     </a>
 
@@ -112,7 +122,7 @@
     <br />
 
     <h3>
-      <span style="color: black">Backend: </span>
+      <span>Backend: </span>
       <span style="color: #af1df5">IntelliJ IDEA </span>
     </h3>
     <p>
@@ -129,7 +139,7 @@
       <img
         src="../Icons/intellij-idea.svg"
         alt="IntelliJ IDEA logo"
-        class="button"
+        class="icon-button"
       />
     </a>
 
@@ -151,5 +161,7 @@
         non-commercial purposes only.
       </p>
     </footer>
+
+    <script src="/js/theme.js"></script>
   </body>
 </html>

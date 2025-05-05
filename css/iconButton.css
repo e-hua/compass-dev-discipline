@@ -1,4 +1,4 @@
-.button {
+.icon-button {
   background-color: #ffffff;
   /* 
   pure white for the icon background color, 
@@ -25,12 +25,12 @@
   /* Enable smooth transition */
 }
 
-.big-button .button {
+.big-button .icon-button {
   height: clamp(120px, 30vw, 240px);
   padding: clamp(12px, 3vw, 24px);
 }
 
-.button:hover {
+.icon-button:hover {
   transform: scale(1.1);
   /*Scale the icon upon hover */
 }
