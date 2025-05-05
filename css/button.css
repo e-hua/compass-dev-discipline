@@ -10,9 +10,9 @@
   Solid Silver for the border of the button
   */
 
-  height: 100px;
+  height: clamp(60px, 15vw, 120px);
+  padding: clamp(6px, 1.5vw, 12px);
   cursor: pointer;
-  padding: 12px 24px;
   /* 
   make the icon smaller 
   with some "buffer" from the paddings
@@ -23,6 +23,11 @@
 
   transition: transform 0.2s ease, border-radius 0.2s ease;
   /* Enable smooth transition */
+}
+
+.big-button .button {
+  height: clamp(120px, 30vw, 240px);
+  padding: clamp(12px, 3vw, 24px);
 }
 
 .button:hover {
@@ -44,7 +49,9 @@
 
   height: 40px;
   cursor: pointer;
-  padding: 4px 8px;
+
+  height: clamp(20px, 5vw, 40px);
+  padding: clamp(2px, 0.5vw, 4px);
   /* 
   make the icon smaller 
   with some "buffer" from the paddings
