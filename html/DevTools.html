@@ -14,10 +14,24 @@
 
     <!-- import the style sheet for the main part of HTML, order matters !-->
     <link rel="stylesheet" href="../css/button.css" />
+
+    <link rel="stylesheet" href="../css/navbar.css" />
   </head>
 
   <body>
     <h1>Development Tools of the Compass Devs</h1>
+
+    <hr />
+
+    <nav class="navbar">
+      <a href="../index.html"> 🏠 Home</a>
+      <a href="./DevTools.html" class="active">🛠 Dev Tools</a>
+      <a href="../index.html">⚙️ Ops Tools</a>
+      <a href="./Languages.html">📚 Languages</a>
+      <a href="../index.html">👤 Developers</a>
+    </nav>
+
+    <hr />
 
     <p>
       I will be showing you some recommended development tools we will be using
@@ -31,14 +45,16 @@
       <span style="color: black">Version Control: </span>
       <span style="color: #f1502f">Git </span>
     </h3>
-    <a href="https://git-scm.com/" class="button_link">
+    <a href="https://git-scm.com/">
       <img src="../Icons/git.svg" alt="A cool Icon for git" class="button" />
     </a>
     <p>
       All the git commit -m command should be followed by meaningful messages,
       specifically, as shown in the link below
     </p>
-    <a href="https://se-education.org/guides/conventions/git.html"
+    <a
+      href="https://se-education.org/guides/conventions/git.html"
+      class="linkButton"
       >View git conventions in details</a
     >
 
@@ -65,7 +81,7 @@
       its rich extension ecosystem, but also due to its seamless integration
       with modern web development workflows.
     </p>
-    <a href="https://code.visualstudio.com/" class="button_link">
+    <a href="https://code.visualstudio.com/">
       <img
         src="../Icons/visual-studio-code.svg"
         alt="Visual Studio Code logo"
@@ -78,6 +94,7 @@
     <h5>1.Prettier</h5>
     <a
       href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+      class="linkButton"
     >
       For HTML and CSS formatting
     </a>
@@ -85,6 +102,7 @@
     <h5>2.Live Server</h5>
     <a
       href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+      class="linkButton"
     >
       Allows you to view the webpage on the browser without refreshing it</a
     >
@@ -107,7 +125,7 @@
       IntelliJ IDEA is your best java programming buddy !
     </p>
 
-    <a href="https://www.jetbrains.com/idea/" class="button_link">
+    <a href="https://www.jetbrains.com/idea/">
       <img
         src="../Icons/intellij-idea.svg"
         alt="IntelliJ IDEA logo"
