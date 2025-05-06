@@ -21,8 +21,8 @@ we will set up the icon based on the default theme we put in the DOM earlier.
 
     icon.src =
       cachedTheme === "dark"
-        ? "../Icons/Light_Switch/moon.svg"
-        : "../Icons/Light_Switch/sun.svg";
+        ? "./Icons/Light_Switch/moon.svg"
+        : "./Icons/Light_Switch/sun.svg";
 
     const toggleTheme = document.getElementById("toggle-theme");
 
@@ -41,8 +41,8 @@ we will set up the icon based on the default theme we put in the DOM earlier.
         localStorage.setItem("theme", isDark ? "dark" : "light");
 
         icon.src = isDark
-          ? "../Icons/Light_Switch/moon.svg"
-          : "../Icons/Light_Switch/sun.svg";
+          ? "./Icons/Light_Switch/moon.svg"
+          : "./Icons/Light_Switch/sun.svg";
       }
     );
   }
