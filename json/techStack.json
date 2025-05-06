@@ -3,22 +3,22 @@
     "language": [
       {
         "name": "HTML",
-        "logo": "./Icons/logos/html5.svg",
+        "logo": "../Icons/logos/html5.svg",
         "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
       },
       {
         "name": "CSS",
-        "logo": "./Icons/logos/css3.svg",
+        "logo": "../Icons/logos/css3.svg",
         "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
       },
       {
         "name": "JavaScript",
-        "logo": "./Icons/logos/javascript.svg",
+        "logo": "../Icons/logos/javascript.svg",
         "link": "https://www.javascript.com/"
       },
       {
         "name": "JSON",
-        "logo": "./Icons/logos/json.svg",
+        "logo": "../Icons/logos/json.svg",
         "link": "https://www.json.org/json-en.html"
       }
     ],
@@ -26,7 +26,7 @@
     "framework": [
       {
         "name": "React.js",
-        "logo": "./Icons/logos/react.svg",
+        "logo": "../Icons/logos/react.svg",
         "link": "https://react.dev/"
       }
     ]
@@ -35,7 +35,7 @@
     "language": [
       {
         "name": "Java",
-        "logo": "./Icons/logos/java.svg",
+        "logo": "../Icons/logos/java.svg",
         "link": "https://www.java.com/en/"
       }
     ],
@@ -43,7 +43,7 @@
     "framework": [
       {
         "name": "Spring Boot",
-        "logo": "./Icons/logos/Spring_Boot.svg",
+        "logo": "../Icons/logos/Spring_Boot.svg",
         "link": "https://spring.io/projects/spring-boot"
       }
     ]
@@ -52,7 +52,7 @@
     "language": [
       {
         "name": "MySQL",
-        "logo": "./Icons/logos/mysql.svg",
+        "logo": "../Icons/logos/mysql.svg",
         "link": "https://www.mysql.com/"
       }
     ]
