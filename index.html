@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/iconButton.css" />
 
     <link rel="stylesheet" href="./css/navbar.css" />
+
+    <link rel="stylesheet" href="./css/stackCards.css" />
   </head>
 
   <body>
@@ -77,53 +79,13 @@
         </a>
       </div>
 
-      <div class="card" onclick="location.href='html/TechStack.html'">
+      <div class="card" id="tech-stack-card" onclick="location.href='html/TechStack.html'">
         <h2>📚 Tech Stack</h2>
         <p>
           Languages, frameworks, databases, front-end and back-end tools we will
           be using!
         </p>
-
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-          <img src="./Icons/html5.svg" alt="HTML logo" class="icon-button" />
-        </a>
-
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-          <img src="./Icons/css3.svg" alt="CSS3 logo" class="icon-button" />
-        </a>
-
-        <a href="https://www.javascript.com/">
-          <img
-            src="./Icons/javascript.svg"
-            alt="JavaScript logo"
-            class="icon-button"
-          />
-        </a>
-
-        <a href="https://react.dev/">
-          <img
-            src="./Icons/react.svg"
-            alt="React.js logo"
-            class="icon-button"
-          />
-        </a>
-
-        <a href="https://www.java.com/en/">
-          <img src="./Icons/java.svg" alt="Java logo" class="icon-button" />
-        </a>
-
-        <a href="https://spring.io/projects/spring-boot">
-          <img
-            src="./Icons/Spring_Boot.svg"
-            alt="Spring Boot logo"
-            class="icon-button"
-          />
-        </a>
-
-        <a href="https://www.mysql.com/">
-          <img src="./Icons/mysql.svg" alt="MySQL logo" class="icon-button" />
-        </a>
-      </div>
+    </div>
 
       <div class="card" onclick="location.href='html/Developers.html'">
         <h2>👨‍💻 Developers</h2>
@@ -131,7 +93,6 @@
           About the creator of this site, contact info, and project background.
         </p>
       </div>
-    </div>
 
     <hr />
 
@@ -149,5 +110,14 @@
     </footer>
 
     <script src="./js/theme.js"></script>
+
+    <script src="./js/iconRender.js" defer></script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        iconRender("tech-stack-card", "./json/techStack.json");
+      });
+    </script>
+
   </body>
 </html>

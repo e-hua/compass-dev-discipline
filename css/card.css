@@ -1,5 +1,6 @@
 .card-grid {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
