@@ -37,11 +37,17 @@ body.dark {
   A "floating" effect
   */
 
+  /*
   position: fixed;
   top: 1rem;
   right: 1rem;
+  */
   padding: 0.5em 1em;
   cursor: pointer;
+}
+
+#toggle-theme:hover img {
+  opacity: 0.5;
 }
 
 body.dark h1,
@@ -61,21 +67,11 @@ body.light button {
   border: none;
 }
 
-body.light button:hover {
-  background-color: #9d7cd8;
-  color: #1a1b26;
-}
-
 body.dark button {
-  background-color: #9d7cd8;
-  color: #1a1b26;
-  border: none;
+  color: #ffffff;
+  background-color: #7aa2f7; /* Tokyo Blue */
   border-radius: 25%;
-}
-
-body.dark button:hover {
-  background-color: #7aa2f7;
-  color: white;
+  border: none;
 }
 
 p {

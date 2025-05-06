@@ -1,9 +1,5 @@
 .navbar {
-  /*background-color: #ffffff; */
-  background-color: #f4f4f4;
-  /*border-bottom: 2px solid #ccc;*/
-  border-bottom: 2px solid #ccc;
-
+  background-color: #7aa2f7; /* Tokyo Blue */
   padding: 12px 24px;
 
   display: flex;
