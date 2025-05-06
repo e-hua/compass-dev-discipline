@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/base.css" />
+
+    <!-- import the style sheet for the main part of HTML, order matters !-->
+    <link rel="stylesheet" href="../css/iconButton.css" />
+
+    <link rel="stylesheet" href="../css/navbar.css" />
+  </head>
+  <body class="big-button">
+    <h1>Operation Tools of the Compass Devs</h1>
+
+    <nav class="navbar">
+      <a href="../index.html"> 🏠 Home</a>
+      <a href="./DevTools.html">🛠 Dev Tools</a>
+      <a href="../html/OpsTools.html" class="active">⚙️ Ops Tools</a>
+      <a href="./TechStack.html">📚 Tech Stack</a>
+      <a href="../index.html">👤 Developers</a>
+
+      <button id="toggle-theme">
+        <img
+          id="theme-icon"
+          src="../Icons/Light_Switch/sun.svg"
+          alt="Toggle theme"
+        />
+      </button>
+    </nav>
+
+    <p>
+      This might not be the most textbook way to explain DevOps, but for clarity
+      and structure, we’ve chosen to separate “Dev” from “Ops” in our workflow.
+    </p>
+    <p>
+      Below are the key Ops tools that form the operational backbone of our
+      project — powering our planning, automation, and deployment.
+    </p>
+
+    <hr />
+
+    <h2>1. Codebase + Collaboration Hub</h2>
+
+    <h3>
+      <span>More than code storage: </span>
+      <span style="color: #08872b">GitHub </span>
+    </h3>
+    <p>
+      It goes without saying that GitHub is the best central platform for
+      <strong>version control</strong>, <strong>issue tracking</strong>, and
+      <strong>team collaboration</strong>. And it happens to be where our entire
+      codebase lives :P
+    </p>
+
+    <a href="https://github.com/">
+      <img
+        src="../Icons/logos/github.svg"
+        alt="Github Logo"
+        class="icon-button"
+      />
+    </a>
+
+    <hr />
+    <h2>2. Visual Planning + Task Management</h2>
+
+    <h3>
+      <span>Whiteboard for our workflow: </span>
+      <span style="color: #f29f05">Miro</span>
+    </h3>
+
+    <a href="https://miro.com/">
+      <img
+        src="../Icons/logos/Miro_Symbol_0.svg"
+        alt="Miro Logo"
+        class="icon-button"
+      />
+    </a>
+
+    <p>
+      Miro is where we <strong>brainstorm ideas</strong>,
+      <strong>design user flows</strong>, and
+      <strong>manage tasks</strong> using Kanban boards. It helps us break down
+      features into trackable action items and align our team on what’s next —
+      visually and interactively.
+    </p>
+
+    <hr />
+
+    <h2>3. Automation + Deployment Engine</h2>
+
+    <h3>
+      <span>Too important to stay in the background: </span>
+      <span style="color: #0066ff">GitHub Actions</span>
+    </h3>
+
+    <a href="https://github.com/features/actions">
+      <img
+        src="../Icons/logos/GitHub Actions.svg"
+        alt="Github Actions Logo"
+        class="icon-button"
+      />
+    </a>
+
+    <p>
+      While GitHub hosts our code, <strong>GitHub Actions</strong> is what keeps
+      it alive and moving. We’ve separated it out because
+      <strong>CI/CD is critical</strong> to our workflow — it ensures every push
+      is <strong>automatically tested</strong>, <strong>built</strong>, and
+      <strong>deployed</strong> to production.
+    </p>
+
+    <p>
+      With GitHub Actions, we never deploy manually. Instead, our automation
+      handles everything from
+      <strong>code formatting checks</strong> to
+      <strong>live deployment</strong> on platforms like Vercel and Railway.
+    </p>
+    <hr />
+    <script src="../js/theme.js"></script>
+  </body>
+</html>

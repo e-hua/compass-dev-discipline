@@ -3,6 +3,8 @@ first set up the default theme : considering the cached value first,
  if there isn't any, 
  set it to be light, 
 */
+const BASE_PATH =
+  window.location.hostname === "127.0.0.1" ? "" : "/compass-dev-discipline";
 
 const cachedTheme = localStorage.getItem("theme") || "light";
 document.body.classList.add(cachedTheme);
@@ -21,8 +23,8 @@ we will set up the icon based on the default theme we put in the DOM earlier.
 
     icon.src =
       cachedTheme === "dark"
-        ? "./Icons/Light_Switch/moon.svg"
-        : "./Icons/Light_Switch/sun.svg";
+        ? BASE_PATH + "/Icons/Light_Switch/moon.svg"
+        : BASE_PATH + "/Icons/Light_Switch/sun.svg";
 
     const toggleTheme = document.getElementById("toggle-theme");
 
@@ -41,8 +43,8 @@ we will set up the icon based on the default theme we put in the DOM earlier.
         localStorage.setItem("theme", isDark ? "dark" : "light");
 
         icon.src = isDark
-          ? "./Icons/Light_Switch/moon.svg"
-          : "./Icons/Light_Switch/sun.svg";
+          ? BASE_PATH + "/Icons/Light_Switch/moon.svg"
+          : BASE_PATH + "/Icons/Light_Switch/sun.svg";
       }
     );
   }
