@@ -1,0 +1,34 @@
+{
+  "Chen Guanhua": {
+    "LinkedIn": [
+      {
+        "name": "LinkedIn",
+        "logo": "./Icons/Devs_Photos/Chen Guanhua.jpeg",
+        "link": "https://www.linkedin.com/in/guanhua-chen-089319325/"
+      }
+    ],
+    "GitHub": [
+      {
+        "name": "GitHub",
+        "logo": "./Icons/Devs_Photos/e-hua.png",
+        "link": "https://github.com/e-hua"
+      }
+    ]
+  },
+  " Gao  Huiying ": {
+    "LinkedIn": [
+      {
+        "name": "LinkedIn",
+        "logo": "./Icons/Devs_Photos/Gao Huiying.jpeg",
+        "link": "https://www.linkedin.com/in/huiying-gao-236162344/"
+      }
+    ],
+    "GitHub": [
+      {
+        "name": "GitHub",
+        "logo": "./Icons/Devs_Photos/ghyyuan.png",
+        "link": "https://github.com/ghyyuan"
+      }
+    ]
+  }
+}

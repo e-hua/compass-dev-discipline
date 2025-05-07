@@ -27,7 +27,7 @@
       <a href="./html/DevTools.html">🛠 Dev Tools</a>
       <a href="./html/OpsTools.html">⚙️ Ops Tools</a>
       <a href="./html/TechStack.html">📚 Tech Stack</a>
-      <a href="./index.html">👤 Developers</a>
+      <a href="./html/Developers.html">👤 Developers</a>
 
       <button id="toggle-theme">
         <img
@@ -93,7 +93,7 @@
         </p>
     </div>
 
-      <div class="card" onclick="location.href='html/Developers.html'">
+      <div class="card" id="devsInfo-card" onclick="location.href='html/Developers.html'">
         <h2>👨‍💻 Developers</h2>
         <p>
           About the creator of this site, contact info, and project background.
@@ -122,6 +122,12 @@
     <script>
       window.addEventListener("DOMContentLoaded", () => {
         iconRender("tech-stack-card", "./json/techStack.json");
+      });
+    </script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        iconRender("devsInfo-card", "./json/devsInfo.json");
       });
     </script>
 
